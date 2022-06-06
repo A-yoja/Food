@@ -246,10 +246,10 @@ body {
 }
 /* product */
 .products {
-    background-color: #3a3e3b;
+    background-color: var(--mainDark);
 }
 .product-info, .product-infetory {
-    padding: 2rem 0;
+    padding: 2rem 0rem;
 }
 .product-text {
     color: var(--mainWhite);
@@ -257,7 +257,7 @@ body {
     margin:1rem 0 ;
 }
 .product {
-    padding: 2rem 0;
+    padding: 2rem 0rem;
 }
 .product-img {
     width: 100%;
@@ -284,7 +284,7 @@ body {
        padding: 2rem 1rem; 
     }
     .product-info {
-        padding: 2rem 1rem;
+        padding: 2rem ;
     }
 
 }
@@ -304,3 +304,75 @@ body {
     }
 }
 /* end of product */
+/* contact */
+.contact {
+    padding: 2rem;
+}
+.contact-item {
+    margin-bottom: 3rem;
+}
+.contact-title {
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    letter-spacing: calc( var(--letterSpacing) * 2 );
+    font-family: var(--macondoText);
+    font-size: 1.08rem;
+    margin-bottom: 0.5rem;
+}
+.contact-text {
+    text-transform: uppercase;
+}
+.form-control {
+    display: block;
+    border: none;
+    border-bottom: 2px solid var(--secondaryColor);
+    outline: none;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 1.3rem 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+
+}
+.form-control::placeholder {
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+}
+@media screen and (min-width:992px) {
+    .contact-info, .contact-form {
+        float: left;
+        width: 50%;
+        padding: 0.1rem;
+
+    }
+    .contact-info {
+        padding: 3rem 0;
+    }
+
+    
+}
+
+/* end of contact */
+/* footar */
+.footer {
+    background: var(--mainDark);
+    text-align: center;
+}
+.socai-icons {
+    color: var(--mainWhite);
+    font-size: 1.3rem;
+    margin-right: 1.3rem;
+    transition: var(--mainTransition);
+}
+.socai-icons:hover {
+    color: var(--secondaryColor);
+}
+.footar-text {
+text-transform: uppercase;
+color: var(--mainWhite);
+letter-spacing: var(--letterSpacing);
+margin-top: 1rem;
+font-size: 00.85rem;
+}
+/* footar */
